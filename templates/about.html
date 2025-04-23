@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!-- Certifications Section -->
+<h2 class="text-center mb-3">📜 Certifications</h2>
+<div class="section mb-5 cert-grid">
+
+  <div class="certificates">
+    <h3>100 Days of Code: Complete Python Pro Bootcamp (by Angela-Yu)</h3>
+    <img src="{{ url_for('static', filename='certificates/yaswanthpython.jpg') }}" alt="udemy">
+    <h2 class="heading"> Covered the full spectrum of Python development </h2>
+    <p class="description">
+      Core Python programming — functions, loops, conditionals, OOP
+      Web Development — Flask, HTML/CSS, REST APIs
+      Data Science Foundations — Pandas, NumPy, Matplotlib
+      Game Development — created games using Turtle and Tkinter
+      Real-world Projects — including web scraping, automation, and GUIs
+    </p>
+  </div>
+
+  <div class="certificates">
+    <h3>Intro to Machine Learning (Kaggle)</h3>
+    <img src="{{ url_for('static', filename='certificates/Yaswanth patnam - Intro to Machine Learning (1).jpg') }}" alt="ml">
+    <h2 class="heading"> This course covered the core concepts of: </h2>
+    <p class="description">
+      Supervised Learning — regression and classification
+      Model Evaluation — train/test split, MAE
+      Decision Trees & Random Forests — building and interpreting models
+      Practical ML Workflow — data preprocessing, handling missing values, feature engineering
+    </p>
+  </div>
+
+  <div class="certificates">
+    <h3>The Joy of Computing using Python (Nptel)</h3>
+    <img src="{{ url_for('static', filename='certificates/The Joy of Computing using Python_page-0001.jpg') }}" alt="nptel">
+    <h2 class="heading">This course explored: </h2>
+    <p class="description">
+       Python Fundamentals — data types, functions, control flow
+       Logic Building & Problem Solving — using puzzles, games, and real-world examples
+       Fun Meets Functionality — explored how computation can be joyful and intuitive
+    </p>
+  </div>
+
+  <div class="certificates">
+    <h3>Introduction to Psychological Aspects of Game Design (edx)</h3>
+    <img src="{{ url_for('static', filename='certificates/Certificate _ edX_page-0001.jpg') }}" alt="edx">
+    <h2 class="heading"> Topics included: </h2>
+    <p class="description">
+        Player Motivation & Behavior
+        Cognitive Load & Flow Theory
+        Designing for Engagement & Retention
+    </p>
+  </div>
+
+</div>
+
+<h2 class="text-center mb-3">📜 Experiences </h2>
+<h2 style="align=center font-family=PT Sans " > Web Development Internship </h2>
+<div class="section mb-5 cert-grid">
+  <div class="experiences">
+    <img src="{{url_for('static',filename='/certificates/internship_page-0001.jpg')}}" alt="internship" >
+    <p class="description-experience">
+        I learned how to build responsive and user-friendly websites using:
+        HTML & CSS — for structuring and styling web pages
+        Version Control with Git & GitHub — for managing code and collaborating effectively
+        Real-world Projects — applied skills to build and update static websites
+    </p>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='carousel.js') }}"></script>
+
+</body>
+</html>
+
+
+<hr>
+<footer class="footer-bar">
+  <div class="footer-content">
+    <span class="copyright">© 2025 Yaswanth Patnam</span>
+    <div class="footer-icons">
+      <a href="https://github.com/Yaswanthpatnam" target="_blank">
+        <img src="{{ url_for('static', filename='icons/github-mark.png') }}" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/yaswanth-patnam-2aa28b340" target="_blank">
+        <img src="{{ url_for('static', filename='icons/LI-In-Bug.png') }}" alt="LinkedIn">
+      </a>
+      <a href="mailto:yaswanthpatnam1819@gmail.com">
+        <img src="{{ url_for('static', filename='icons/icons8-gmail-48.png') }}" alt="Email">
+      </a>
+    </div>
+  </div>
+</footer>

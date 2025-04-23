@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="profile-container">
+    <div class="carousel">
+        <img src="{{ url_for('static', filename='img-yashu.jpg') }}" class="carousel-image active" alt="Profile 1">
+        <img src="{{ url_for('static', filename='img-3.jpg') }}" class="carousel-image" alt="Profile 2">
+        <img src="{{ url_for('static', filename='img-4.jpg') }}" class="carousel-image" alt="Profile 3">
+    </div>
+    <div>
+        <h1 class="display-5 fw-bold text-body-emphasis">HI, YASWANTH HERE!</h1>
+    </div>
+    <!-- Centered Content -->
+    <div class="center-content">
+        <p>
+            I’m a passionate Software Developer who thrives on building meaningful digital experiences.
+            From crafting sleek, responsive web designs to engineering intelligent machine learning models,
+            I love solving real-world problems with clean and efficient code.
+        </p>
+    </div>
+
+    <div class="buttons-container">
+    <a href="{{ url_for('static', filename='Yaswanth_Updated_CV.pdf') }}" target="_blank">
+        <button type="button" class="btn btn-about btn-lg px-4">Resume</button>
+    </a>
+    <a href=#>
+        <button type="button" class="btn btn-projects btn-lg px-4">Projects</button>
+    </a>
+     <a href="{{url_for('about')}}">
+        <button type="button" class="btn btn-projects btn-lg px-4">About</button>
+    </a>
+    </div>
+
+
+</div>
+{% endblock %}
