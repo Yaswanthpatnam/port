@@ -1,3 +1,9 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* Color Palette */
 :root {
     --primary-color: #213448; /* Deep Navy Blue */
@@ -7,16 +13,11 @@
     --lightCream-color: #F5EEDD;
 }
 
-/* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Special+Gothic+Expanded+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
 
 /* General Styling */
 body {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
     font-style: normal;
     background-color: var(--background-color);
     color: var(--lightCream-color);
@@ -34,15 +35,17 @@ h1 {
 
 /* Center Paragraph Content */
 .center-content {
+    font-family:
     justify-content: center;
     align-items: center;
     width: 80%;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 0px;
 }
+
 
 /* Profile Section */
 .profile-container {
@@ -140,12 +143,13 @@ h1 {
 
 /* Certificate Grid */
 .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    padding: 20px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  justify-content: center; /* Center-align content */
 }
+
 
 /* Certificate Cards */
 .certificates h3 {
