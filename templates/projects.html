@@ -4,11 +4,45 @@
 {% block content %}
 <h1>Projects</h1>
 
-<div class = "projects-container">
-<ul>
-    <li>Flask-based Portfolio Website</li>
-    <li>Machine Learning House Price Predictor</li>
-    <li>AI Resume Analyzer & Job Recommender</li>
-</ul>
+<div class="projects-container">
+    <ul class="projects-list">
+        <li class="project-item">
+            <a href="https://weather-app-ma7h.onrender.com" target="_blank" class="project-link">
+                <div class="project-card">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">A dynamic weather application built with modern web technologies</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="project-item">
+            <div class="project-card">
+                <h3 class="project-title">Machine Learning House Price Predictor</h3>
+                <p class="project-description">Advanced ML model for real estate price prediction using regression algorithms</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">NumPy</span>
+                </div>
+            </div>
+        </li>
+        <li class="project-item">
+            <div class="project-card">
+                <h3 class="project-title">AI Resume Analyzer & Job Recommender</h3>
+                <p class="project-description">Intelligent system that analyzes resumes and recommends suitable job opportunities</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Flask</span>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 {% endblock %}
